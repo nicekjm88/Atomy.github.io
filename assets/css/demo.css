@@ -1,0 +1,55 @@
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.intro {
+  background-color: #efefef;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro > p {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+#tGdsDetail {
+  position: relative;
+  padding: 40px 0;
+  min-height: 1000px;
+}
+
+#content {
+  width: calc(100% - 250px);
+  padding-left: 250px;
+}
+
+#side-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: #1b1c1d;
+  width: 250px;
+}
+
+#side-nav > ul > li > a {
+  border-bottom: 1px solid #2d2e2f;
+  display: block;
+  padding-left: 15px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+}
+
+.sources {
+  margin: 100px auto;
+  width: 750px;
+}
+.sources__description-list {
+  margin-top: 50px;
+}
