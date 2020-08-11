@@ -1,12 +1,12 @@
 $(function () {
 
-  fetch("_include/nav.html")
-  .then(response => {
-    return response.text()
-  })
-  .then(data => {
-    document.querySelector("#side-nav").innerHTML = data;
-  });  
+  // fetch("_include/nav.html")
+  // .then(response => {
+  //   return response.text()
+  // })
+  // .then(data => {
+  //   document.querySelector("#side-nav").innerHTML = data;
+  // });  
 
   // 스크롤 애니메이션
   (function scrollInteraction(global, $) {
