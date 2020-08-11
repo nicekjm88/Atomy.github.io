@@ -1,6 +1,15 @@
+<a class="logo" href="index.html"><img src="assets/image/logo.png" alt=""></a>
 <ul>
   <li><a href="demo1.html">제품 제목 애니메이션</a></li>
   <li><a href="demo2.html">소 제목 애니메이션</a></li>
   <li><a href="#">효과#4</a></li>
   <li><a href="#">효과#5</a></li>
-</ul>
+</ul>  
+
+<script>
+  $(function() {
+    $('ul').on('click', function() {
+      console.log('테스트');
+    });
+  });
+</script>
