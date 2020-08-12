@@ -1,17 +1,17 @@
 $(function () {
 
   // 인클루드
-  (function(global, $) {
-    'use strict';
+  // (function(global, $) {
+  //   'use strict';
 
-    var includes = $('[data-include]');
+  //   var includes = $('[data-include]');
 
-    $.each(includes, function (){
-      var file ='_include/' + $(this).data('include') + '.html';
-      $(this).load(file);
-    });
+  //   $.each(includes, function (){
+  //     var file ='_include/' + $(this).data('include') + '.html';
+  //     $(this).load(file);
+  //   });
 
-  })(window, window.jQuery);
+  // })(window, window.jQuery);
 
   // 스크롤 애니메이션
   (function scrollInteraction(global, $) {
@@ -115,9 +115,4 @@ $(function () {
 
 });
 
-$(window).load(function() {
-  $('.nav').on('mouseenter', function() {
-    console.log('이벤트');
-  });
-});
 
