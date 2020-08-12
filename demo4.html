@@ -27,34 +27,36 @@
   <div class="intro">
     <h1>
       <img src="assets/image/logo.png" alt=""><br>
-      소 제목 애니메이션
+      순차적으로 왼쪽에서 오른쪽으로<br>애니메이션
     </h1>
 
     <p>스크롤 해보세요.</p>
   </div>
   <div id="tGdsDetail">
     <section class="detail-description">
-      <!-- 대표 제품 소개 -->
-      <article class="product-how-to-use">
-        <h1 class="title"><span>사용방법</span></h1>
-      </article>
+      <ul class="layout-inline animation-left-right">
+        <li><img src="assets/image/img_howtouse1.gif" alt=""></li>
+        <li><img src="assets/image/img_howtouse2.gif" alt=""></li>
+        <li><img src="assets/image/img_howtouse3.gif" alt=""></li>
+      </ul>
     </section>
 
     <div class="sources">
 <!-- code -->
 <pre>
 <code class="html">
-<article>
-  <h1 class="title">
-    <span>타이틀 제목</span>
-  </h1>
-</article>
+<ul class="animation-left-right">
+  <li>lorem ipsum</li>
+  <li>lorem ipsum</li>
+  <li>lorem ipsum</li>
+</ul>
 </code>
 </pre>
 <!-- //code -->
-      <ul class="sources__description-list">
-        <li>- &lt;article&gt; 태그를 사용해주세요.</li>
-        <li>- 제목 영역에 class="title"을 넣어주세요.</li>
+      <ul class="sources__description-list">        
+        <li>- &lt;ul&gt; 영역에 class="animation-left-right"을 넣어주세요.</li>
+        <li>- 순차적으로 나타내고 싶은 텍스트를 &lt;li&gt;태그를 사용해 넣어주세요.</li>
+        <li>- &lt;li&gt;태그 안에 자유롭게 스타일링 가능 합니다.</li>
       </ul>
     </div>
   </div>

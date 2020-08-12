@@ -9,16 +9,25 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/common.css">
   <link rel="stylesheet" href="assets/css/detail-view.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/default.min.css">  
   <link rel="stylesheet" href="assets/css/demo.css">
 </head>
 
 <body>
-<section id="side-nav"></section>
+<section id="side-nav">
+  <a class="logo" href="index.html"><img src="assets/image/logo.png" alt=""></a>
+  <ul>
+    <li><a href="demo1.html">대 제목</a></li>
+    <li><a href="demo2.html">소 제목</a></li>
+    <li><a href="demo3.html">아래에서 위로</a></li>
+    <li><a href="demo4.html">왼쪽에서 오른쪽으로</a></li>
+  </ul>    
+</section>
 <section id="content">
   <div class="intro">
     <h1>
       <img src="assets/image/logo.png" alt=""><br>
-      제품 제목 애니메이션
+      대 제목 애니메이션
     </h1>
 
     <p>스크롤 해보세요.</p>
@@ -37,14 +46,20 @@
     </section>
 
     <div class="sources">
-      <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="html" data-user="nicekjm88" data-slug-hash="wvGKMqP" data-preview="true" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="제품 제목 애니메이션">
-        <span>See the Pen <a href="https://codepen.io/nicekjm88/pen/wvGKMqP">
-        제품 제목 애니메이션</a> by nicekjm88 (<a href="https://codepen.io/nicekjm88">@nicekjm88</a>)
-        on <a href="https://codepen.io">CodePen</a>.</span>
-      </p>
-      <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-
-
+<!-- code -->
+<pre>
+<code class="html">
+<article>
+  <h1 class="text-animation">
+    <span>애</span><span>터</span><span>미</span>
+    <span>블</span><span>러</span><span>셔</span>
+    <span>듀</span><span>오</span>
+    <span>키</span><span>트</span>
+  </h1>
+</article>
+</code>
+</pre>
+<!-- //code -->
       <ul class="sources__description-list">
         <li>- HTML 태그에 text-animation CSS 클래스 추가</li>
         <li>- 애니메이션 효과를 위해 글씨마다 SPAN태그로 감싸줍니다</li>
@@ -58,8 +73,20 @@
   <!-- script -->
   <script src="https://unpkg.com/jquery@2.2.4/dist/jquery.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script>
   <script src="assets/js/accordion.js"></script>
   <script src="assets/js/script.js"></script>
+  <script>
+    $('code').each(function() {
+      var that = $(this);
+      // cache the content of 'code'
+      var html = that.html().trim();
+      that.empty();
+      // escape the content
+      that.text(html);
+    });
+    hljs.initHighlightingOnLoad();    
+  </script>  
 </body>
 
 </html>

@@ -27,34 +27,36 @@
   <div class="intro">
     <h1>
       <img src="assets/image/logo.png" alt=""><br>
-      소 제목 애니메이션
+      순차적으로 아래에서 위로<br>애니메이션
     </h1>
 
     <p>스크롤 해보세요.</p>
   </div>
   <div id="tGdsDetail">
     <section class="detail-description">
-      <!-- 대표 제품 소개 -->
-      <article class="product-how-to-use">
-        <h1 class="title"><span>사용방법</span></h1>
-      </article>
+      <div class="center animation-down-up">
+        <p><strong>HOW TO USE</strong></p>
+        <p>양 볼과 광대의 윤곽을 따라 가볍게 터치하듯 블렌딩해 주세요</p>
+        <p><span class="box box__rounded">애터미 블러셔 튜오 키트 사용 팁</span></p>
+      </div>
     </section>
 
     <div class="sources">
 <!-- code -->
 <pre>
 <code class="html">
-<article>
-  <h1 class="title">
-    <span>타이틀 제목</span>
-  </h1>
-</article>
+<div class="animation-down-up">
+  <p><strong>HOW TO USE</strong></p>
+  <p>양 볼과 광대의 윤곽을 따라 가볍게 터치하듯 블렌딩해 주세요</p>
+  <p><span>애터미 블러셔 튜오 키트 사용 팁</span></p>
+</div>
 </code>
 </pre>
 <!-- //code -->
-      <ul class="sources__description-list">
-        <li>- &lt;article&gt; 태그를 사용해주세요.</li>
-        <li>- 제목 영역에 class="title"을 넣어주세요.</li>
+      <ul class="sources__description-list">        
+        <li>- 해당 영역에 class="animation-down-up"을 넣어주세요.</li>
+        <li>- 순차적으로 나타내고 싶은 텍스트를 p태그를 사용해 넣어주세요.</li>
+        <li>- p태그 안에 자유롭게 스타일링 가능 합니다.</li>
       </ul>
     </div>
   </div>
