@@ -136,6 +136,7 @@ body.is-active::after {
     width: 100%;
     box-sizing: border-box;
   }
+  .sources,
   .detail-description img {
     max-width: 100%;
   }

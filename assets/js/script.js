@@ -97,7 +97,10 @@ $(function () {
         $(this).removeAttr('hidden');
       });
 
-      AOS.refresh();
+      setTimeout(function() {
+        AOS.refresh();
+      }, 500);
+      
     });
 
 
