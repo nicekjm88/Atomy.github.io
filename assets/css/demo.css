@@ -153,4 +153,7 @@ body.is-active::after {
   ul.layout-inline {
     text-align: center;
   }
+  .intro > p {
+    bottom: 10vh;
+  }
 }
