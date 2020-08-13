@@ -113,6 +113,10 @@ $(function () {
       $('html, body').animate( {scrollTop: offset_top}, 500 );
   });   
 
+  $('.all-menu').on('click', function() {
+    $('#side-nav').toggleClass('is-active');
+  });
+
 });
 
 

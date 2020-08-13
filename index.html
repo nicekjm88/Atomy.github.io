@@ -7,12 +7,17 @@
   <title>상세페이지 애니메이션</title>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
   <link rel="stylesheet" href="assets/css/common.css">
   <link rel="stylesheet" href="assets/css/detail-view.css">
   <link rel="stylesheet" href="assets/css/demo.css">
 </head>
 
 <body>
+<button type="button" class="all-menu">
+  <i class="xi-bars"></i>
+  <span class="a11y-hidden">햄버거매뉴</span>  
+</button>
 <section id="side-nav">
   <a class="logo" href="index.html"><img src="assets/image/logo.png" alt=""></a>
   <ul class="nav">
@@ -22,6 +27,8 @@
     <li><a href="demo4.html">왼쪽에서 오른쪽으로</a></li>
   </ul>    
 </section>
+
+
 <section id="content">
   <div class="intro">
     <h1>
@@ -141,9 +148,6 @@
             <div class="product-content">
               <!-- 주의 사항 -->
               <article class="product-caution">
-                <h1 class="title"><span>주의사항</span></h1>
-
-                <h2>사용 시의 주의사항</h2>
                 <ol>
                   <li>화장품 사용 시 또는 사용 후 직사광선에 의하여 사용부위가 붉은 반점, 부어오름 또는 가려움증 등의 이상 증상이나 부작용이 있을 경우 전문의
                     등과 상담할 것</li>

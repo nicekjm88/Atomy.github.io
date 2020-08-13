@@ -168,19 +168,34 @@
 .box__detail-more .button__detail-more.on:before{
   display:none
 }
-#product > li {
+.product-details > li {
   border-bottom: 1px solid #ccc;
   text-align: left;
 }
-#product .product-title {
+.product-details > li button {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.product-details .product-title {
   display: block;
   width: 100%;
   text-align: left;
   padding: 15px 20px 15px 20px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #00ade4;
 }
-#product .product-title::before {
+.product-details .product-content {
+  padding: 20px 30px;
+}
+.product-details .product-title::before {
   content: '+ ';
 }      
+.product-details > li.is-active .product-title::before {
+  content: '- ';
+}
+.product-details > li.is-active .product-content {
+  border-top: 1px solid #ccc;
+}
 
 .img-bg {
   position: absolute;
