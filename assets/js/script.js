@@ -103,19 +103,21 @@ $(function () {
 
   })(window, window.jQuery);
 
-  // 스무스 스크롤
-  $("#side-nav a[href^='#']").on('click', function(e) {
-      e.preventDefault();
 
-      var target = $(this.hash),
-          offset_top = target.offset().top;
-      
-      $('html, body').animate( {scrollTop: offset_top}, 500 );
-  });   
+  // Mobile Button Event
+  (function mobileButtonEvent(global, $) {
+    'use strict';
 
-  $('.all-menu').on('click', function() {
-    $('#side-nav').toggleClass('is-active');
-  });
+    $('.all-menu').on('click', function() {
+      $('#side-nav, body').addClass('is-active');
+    });
+  
+    $('body').on('click', function(e) {    
+      if ( e.target === $(this).context ) {
+        $('#side-nav, body').removeClass('is-active');      
+      } 
+    });
+  })(window, window.jQuery);
 
 });
 
