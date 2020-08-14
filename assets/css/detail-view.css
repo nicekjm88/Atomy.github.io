@@ -108,7 +108,7 @@
   border-bottom: none;
 }
 
-.product-main-picture h1{
+.product-main-picture h1 {
   color: #ff7e7e;
   font-size: 48px;
   margin-bottom: 20px;
@@ -172,6 +172,9 @@
   border-bottom: 1px solid #ccc;
   text-align: left;
 }
+.product-details > li img {
+  max-width: 100%;
+}
 .product-details > li button {
   font-family: 'Noto Sans KR', sans-serif;
 }
@@ -195,6 +198,10 @@
 }
 .product-details > li.is-active .product-content {
   border-top: 1px solid #ccc;
+}
+
+.product-details .product-content p + p {
+  margin-top: 40px;
 }
 
 .img-bg {
@@ -267,4 +274,30 @@ ul.layout-inline {
 }
 ul.layout-inline > li {
   display: inline-block;
+}
+
+/* 헤모힘 전용 스타일 */
+.hemohim .product-main-picture h1,
+.hemohim .center strong,
+.hemohim .center span.box,
+.hemohim .list-hashtag > li {
+  color: #e3462f;
+}
+.hemohim .product-main-picture .border-style {
+  border-color: #e3462f;
+}
+.hemohim .animation-down-up > p{
+  margin-top: 40px;
+}
+.hemohim .animation-down-up > p:first-child {
+  margin-top: 60px;
+}
+.hemohim.detail-description > article + article {
+  margin-top: 70px;
+}
+.hemohim .area-hashtag {
+  height: 604px;
+}
+.hemohim .list-hashtag {
+  width: 50%;
 }

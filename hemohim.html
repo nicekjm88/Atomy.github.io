@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>상세페이지 애니메이션</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <link rel="stylesheet" href="assets/css/common.css">
+  <link rel="stylesheet" href="assets/css/detail-view.css">
+  <link rel="stylesheet" href="assets/css/demo.css">
+</head>
+
+<body>
+
+<button type="button" class="all-menu">
+  <i class="xi-bars"></i>
+  <span class="a11y-hidden">햄버거매뉴</span>  
+</button>
+
+<section id="side-nav">
+  <a class="logo" href="index.html"><img src="assets/image/logo.png" alt=""></a>
+  <ul class="nav">
+    <li><a href="demo1.html">대 제목</a></li>
+    <li><a href="demo2.html">소 제목</a></li>
+    <li><a href="demo3.html">아래에서 위로</a></li>
+    <li><a href="demo4.html">왼쪽에서 오른쪽으로</a></li>
+    <li><a href="hemohim.html">실제 적용 예시</a></li>
+  </ul>    
+</section>
+
+
+<section id="content">
+  <div class="intro">
+    <h1>
+      <img src="assets/image/logo.png" alt=""><br>
+      헤모힘 상세 페이지
+    </h1>
+    <p>스크롤 해보세요.</p>
+  </div>
+  <div id="tGdsDetail">
+    <section class="detail-description hemohim">
+      <!-- 대표 제품 소개 -->
+      <article class="product-main-picture">
+          <h1 class="text-animation">
+            <span>애</span><span>터</span><span>미</span>
+            <span>헤</span><span>모</span><span>힘</span>
+          </h1>
+        <figure class="border-style" data-aos="fade">
+          <img src="assets/image/hemohim/img_hemohim1.jpg" alt="대표 이미지">
+        </figure>
+        <div class="area-hashtag">
+          <ul class="list-hashtag text-animation2">
+            <li>밀착감</li>
+            <li>가루날림, 뭉침 NO!</li>
+            <li>투명피부</li>
+            <li>블러링효과</li>
+            <li>완벽한 컬러발색</li>
+            <li>보송한사용감</li>
+            <li>메이크업 지속성</li>
+          </ul>
+          <img class="img-bg" src="assets/image/hemohim/img_hemohim1-2.jpg" alt="">
+        </div>
+      </article>
+
+      <!-- 사용 방법 -->
+      <!-- <article class="product-how-to-use">
+        <h1 class="title"><span>사용방법</span></h1>
+        <div class="center animation-down-up">
+          <p><strong>HOW TO USE</strong></p>
+          <p>양 볼과 광대의 윤곽을 따라 가볍게 터치하듯 블렌딩해 주세요</p>
+          <p>
+            <span class="box box__rounded">애터미 블러셔 튜오 키트 사용 팁</span>
+          </p>
+        </div>
+        <ul class="layout-inline animation-left-right">
+          <li><img src="assets/image/img_howtouse1.gif" alt=""></li>
+          <li><img src="assets/image/img_howtouse2.gif" alt=""></li>
+          <li><img src="assets/image/img_howtouse3.gif" alt=""></li>
+        </ul>
+
+        <div class="mt50" data-aos="fade-up">
+          <p><img src="assets/image/img_howtouse4.gif" alt=""></p>
+        </div>
+      </article> -->
+
+      <!-- 제품 구성 -->
+      <article class="product-composition">
+        <h1 class="title"><span>제품구성</span></h1>
+        <figure>
+          <img src="assets/image/hemohim/img_hemohim2.jpg" alt="이미지">
+        </figure>
+        <div class="table-wrap">
+          <table class="table table--type2">
+            <colgroup>
+              <col style="width: 20%">
+              <col>
+            </colgroup>
+            <tbody>
+              <tr>
+                <th scope="row">제품명</th>
+                <td>애터미 헤모힘</td>
+              </tr>
+              <tr>
+                <th scope="row">식품유형</th>
+                <td>개별인정형 건강기능식품</td>
+              </tr>
+              <tr>
+                <th scope="row">용량</th>
+                <td>20ml × 60포(1,200ml)</td>
+              </tr>
+              <tr>
+                <th scope="row">연구개발</th>
+                <td>한국원자력연구원</td>
+              </tr>
+              <tr>
+                <th scope="row">제조원</th>
+                <td>콜마비앤에이치㈜ 선바이오텍사업부문</td>
+              </tr>
+              <tr>
+                <th scope="row">원료명 및 함량</th>
+                <td>헤모힘당귀등혼합추출물[(당귀/국산), (천궁/국산), (백작약/국산)], 정제수, 벌꿀, 저당, 프락토올리고당, 구연산, 구아검, 알긴산나트륨, 비타민C, 해조분말, 판토텐산칼슘, 비타민 B6 염산염, 비타민 B1 염산염, 비타민 B2</td>
+              </tr>
+              <tr>
+                <th scope="row">섭취량 및 섭취방법</th>
+                <td>1일 2회, 1회 1포(20ml) 총 60회 분량</td>
+              </tr>
+              <tr>
+                <th scope="row">보관방법</th>
+                <td>본 제품은 살균 처리한 제품이나 습기 및 직사광선을 피하여 서늘한 곳에 보관하고 개봉 후에는 바로 드십시오.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <!-- 제품 정보 -->
+      <article>
+        <h1 class="title"><span>제품정보</span></h1>
+        <div class="animation-down-up">
+          <p><img src="assets/image/hemohim/img_hemohim3-1.jpg" alt=""></p>
+          <p><img src="assets/image/hemohim/img_hemohim3-2.jpg" alt=""></p>
+          <p><img src="assets/image/hemohim/img_hemohim3-3.jpg" alt=""></p>
+        </div>
+      </article>
+
+      <!-- 아코디언 -->
+      <article>
+        <ul class="product-details">
+          <li>
+            <button type="button" class="product-title">주의사항</button>
+            <div class="product-content">
+              <img src="assets/image/hemohim/img_hemohim4.gif" alt="">              
+            </div>
+          </li>
+          <li>
+            <button type="button" class="product-title">섭취대상</button>
+            <div class="product-content">
+              <img src="assets/image/hemohim/img_hemohim5.gif" alt="">              
+            </div>
+          </li>
+          <li>
+            <button type="button" class="product-title">영양성분</button>
+            <div class="product-content">
+              <p><img src="assets/image/hemohim/img_hemohim6-1.gif" alt=""></p>
+              <p><img src="assets/image/hemohim/img_hemohim6-2.gif" alt=""></p>
+            </div>
+          </li>
+          <li>
+            <button type="button" class="product-title">건강정보</button>
+            <div class="product-content">
+              <p><img src="assets/image/hemohim/img_hemohim7-1.jpg" alt=""></p>
+              <p><img src="assets/image/hemohim/img_hemohim7-2.gif" alt=""></p>           
+            </div>
+          </li>                              
+          <li>
+            <button type="button" class="product-title">전자상거래 등에서의 상품정보제공 고시</button>
+            <div class="product-content">
+              <!-- 전자상거래 등에서의 상품정보제공 고시 -->
+              <article class="product-spec">
+                <table class="table">
+                  <colgroup>
+                    <col style="width: 30%">
+                    <col>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope="row">식품의 유형</th>
+                      <td>건강기능식품</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">생산자 및 소재지</th>
+                      <td>
+                        <ul>
+                          <li>연구개발 : 한국원자력연구원 / 대전광역시 유성구 대덕대로 989번길 111</li>
+                          <li>제조원 : 콜마비앤에이치㈜ 선바이오텍사업부문 / 세종특별자치시 전의면 산단길22-15</li>
+                        </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">제조연월일, 유통기한 또는 품질유지기한</th>
+                      <td>제조일로부터 2년 / 제품 별도 표기</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">포장단위별 용량(중량), 수량</th>
+                      <td>20ml x 60포(1,200ml)</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">원재료명 및 함량</th>
+                      <td>상세설명 참조</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">영양정보</th>
+                      <td>상세설명 참조</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">기능정보</th>
+                      <td>헤모힘 당귀등 혼합추출물 : 면역기능 개선에 도움을 줄 수 있습니다.</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">섭취방법 및 섭취 시 주의사항 및 부작용 가능성</th>
+                      <td>1일 2회, 1회 1포(20ml) / 상세설명 참조</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">질병의 예방 및 치료를 위한 의약품이 아니라는 내용의 표현</th>
+                      <td>본 제품은 질병의 예방 및 치료를 위한 의약품이 아닙니다.</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">유전자재조합식품에 해당하는 경우의 표시</th>
+                      <td>해당사항 없음</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">표시광고 사전심의필</th>
+                      <td>심의 필</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">소비자상담 관련 전화번호</th>
+                      <td>애터미㈜ 고객행복센터 : 1544-8580</td>
+                    </tr>                                                                                                                                                                                    
+                  </tbody>
+                </table>
+              </article>
+            </div>
+          </li>
+        </ul>
+      </article>
+    </section>
+  </div>
+</section>
+
+  <!-- script -->
+  <script src="https://unpkg.com/jquery@2.2.4/dist/jquery.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="assets/js/accordion.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
